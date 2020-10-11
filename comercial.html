@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property post</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--Get your own code at fontawesome.com-->
+</head>
+<body>
+    <div class="sidebar">
+    <div class="container">
+        <div id="activeBorder" class="active-border">
+            <div id="circle" class="circle">
+                <span class="prec 270" id="prec">0%</span>
+            </div>
+        </div>
+    </div>
+        
+
+        <a class="active" href="#home">Basic details</a>
+        <a href="#news">Location </a>
+        <a href="#contact">Property Details </a>
+        <a href="#about">Pricing</a>
+        <a href="#about">Features</a>
+        <a href="#about">Subscription</a>
+      </div>
+ <h3 style="text-align:center" > Welcome USER. Post property ads for sale / rent in 6 simple steps</h3>     
+     
+<div id="main">
+    <div>
+       
+        <p  class="text">you are *</p>
+        <div class="icon">
+            <a href="#">
+        <i class='fas fa-user-circle' class="top">owner</i> </a>
+        <a href="#">
+        <i class='	fas fa-user-friends' class="top"> 
+            Builder</i>
+        </a>
+            <a href="#">
+            <i class='	fas fa-balance-scale' class="top"> 
+                Dealer</i>
+                </a>
+
+     </div>
+   
+
+    <div class="custom-select" style="width:122px; color: antiquewhite;">
+        <select>
+          <option value="0">List property for:</option>
+          <option value="1">Sell</option>
+          <option value="2">Rent</option>
+          <option value="3">Paying Guest</option>
+        
+        </select>
+      </div>
+      
+      <p  class="text" style="margin-top: 70px;"> Property Type: *</p>
+      <a href="index.html">Residential/</a>
+      <a href="comercial.html">Comercial</a>
+      <div class="box"> 
+        <a href="#" class="previous round">&#8249;</a>
+          <i class="fas fa-house-damage" style='font-size:48px;color:black; margin-top: 20px;margin-left: 40px;'> </i>
+         <i class="	fas fa-synagogue" style='font-size:48px;color:black; margin-top: 20px;margin-left: 60px;'> </i>
+          <i class="	fas fa-industry" style='font-size:48px;color:black; margin-top: 20px;margin-left: 80px;'> </i>
+          <i class="	fas fa-hospital" style='font-size:48px;color:black; margin-top: 20px;margin-left: 80px;'> </i>
+          <i class="	fas fa-home" style='font-size:48px;color:black; margin-top: 20px;margin-left: 100px;'> </i>
+          <a href="#" class="next round">&#8250;</a><br>
+         
+         <p class="ico"  style="margin-left: 30px;"><a href="#">Aparment/Flat</a></p>
+         <p class="ico"    style="margin-left: 50px;"><a href="#">Land</a></p>
+         <p class="ico"  style="margin-left: 90px;"><a href="#">House</a></p>
+         <p  class="ico" style="margin-left: 80px;"><a href="#">Hospital</a></p>
+         <p class="ico"  style="margin-left: 90px;"><a href="#">Others</a></p>
+         
+      </div>
+      <div>
+          <p class="box2"><a href="#">Let's Get Started</a></p>
+          </div>
+    </div>     
+</div>
+
+
+<script>
+    {
+        var i = 0,
+  prec;
+var degs = $("#prec").attr("class").split(' ')[1];
+var activeBorder = $("#activeBorder");
+
+setTimeout(function() {
+  if ($("#circle").is(":hover"))
+    loopit("c");
+  else
+    loopit("nc");
+}, 1);
+
+function loopit(dir) {
+  if (dir == "c")
+    i++
+  else
+    i--;
+  if (i < 0)
+    i = 0;
+  if (i > degs)
+    i = degs;
+  prec = (100 * i) / 360;
+  $(".prec").html(Math.round(prec) + "%");
+
+  if (i <= 180) {
+    activeBorder.css('background-image', 'linear-gradient(' + (90 + i) + 'deg, transparent 50%, #A2ECFB 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+  } else {
+    activeBorder.css('background-image', 'linear-gradient(' + (i - 90) + 'deg, transparent 50%, #39B4CC 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+  }
+
+  setTimeout(function() {
+    if ($("#circle").is(":hover"))
+      loopit("c");
+    else
+      loopit("nc");
+  }, 1);
+
+}
+
+
+}
+</script>
+</body>
+</html>

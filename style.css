@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin-top:25px;
+    padding: 0;
+    width: 200px;
+    background-color: #555;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-left: 73px;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  #main {
+    position: fixed;
+    top: 45px;
+    right: 25px;
+    bottom: 25px;
+    left: 275px; /* width of #sidebar + extra margin */
+    overflow: auto;
+    height: 100%;
+}
+#main > div {
+    width: 100%;
+    height: 100%;
+    background: azure;
+    overflow: auto;
+}
+
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+        margin-left: 35px;
+
+}
+.text{
+    margin-left:20px;
+    color:gray;
+ 
+}
+ .icon{
+    margin-left:50px;
+    margin-top:10px;
+  
+ }
+  /*the container must be positioned relative:*/
+.custom-select{
+    margin-top: 50px;
+    margin-left:20px ;
+  border:2px solid black;
+ 
+}
+.box
+{
+    height: 130px;
+    width: 900px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+a{
+    margin-left: 5px;
+
+}
+a:hover {
+    background-color: blanchedalmond;
+  }
+  .box2
+  {
+      height:20px;
+      width: 200px;
+      border:2px solid black;
+      margin-left: 300px;
+      margin-top:50px;
+      text-align: center;
+      background-color: rgba(0, 0, 255, 0.404);
+  }
+  .ico{
+   
+     float:left;
+  }
+  .icon{
+    font-size:48px;
+  
+  }
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 3px solid;
+    font-size: 40px;
+  }
+  a{
+      text-decoration: none;
+  }
+  a:hover
+  {
+      text-decoration: underline;
+  }
+
+
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      z-index:100;
+      
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left:10;}
+    #main {
+        position: fixed;
+        z-index: 999;
+       
+      
+        width: 100%;
+
+    
+       /* width of #sidebar + extra margin */
+    }
+    #main > div {
+        width: 100%;
+        height: 100%;
+        background: azure;
+        margin-top:205px;
+       
+        margin-left: -200px;
+        position: fixed;
+    }
+    .icon{
+        margin-left:150px;
+        margin-top:150px;
+        margin-right: 50px;
+       
+     
+     }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float:left;
+    }
+    .sidebar {
+        width: 100%;
+       
+        position: fixed;
+        margin-left: 5px;
+      }
+ 
+      #main {
+        position: fixed;
+        top: 45px;
+        right: 25px;
+       
+        left: 275px; /* width of #sidebar + extra margin */
+        overflow: auto;
+        height: 100%;
+        margin-left: -80px;
+    }
+    #main > div {
+        width: 100%;
+        height: 100%;
+        background: azure;
+        overflow: auto;
+    }
+    
+    
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+        margin-right: 35px;
+
+}
+}
+
