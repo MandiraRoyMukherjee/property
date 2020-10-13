@@ -8,10 +8,11 @@ body {
     padding: 0;
     width: 200px;
     background-color: #555;
-    position: fixed;
+    position: absolute;
     height: 100%;
     overflow: auto;
-    margin-left: 73px;
+    margin-left:72px;
+   
   }
   
   .sidebar a {
@@ -35,24 +36,24 @@ body {
   div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 100px;
   }
 
   #main {
-    position: fixed;
+  position: absolute;
     top: 45px;
     right: 25px;
     bottom: 25px;
     left: 275px; /* width of #sidebar + extra margin */
     overflow: auto;
     height: 100%;
-}
-#main > div {
     width: 100%;
-    height: 100%;
-    background: azure;
-    overflow: auto;
-}
+  
+    
+      background-color: azure;
+  }
+  
+
 
 .active-border{
     position: relative;
@@ -91,6 +92,7 @@ body {
     border: 2px solid black;
     margin-left: 20px;
     margin-top: 20px;
+    position: static;
 }
 a{
     margin-left: 5px;
@@ -153,23 +155,17 @@ a:hover {
     div.content {margin-left:10;}
     #main {
         position: fixed;
-        z-index: 999;
-       
-      
-        width: 100%;
-
-    
-       /* width of #sidebar + extra margin */
-    }
-    #main > div {
-        width: 100%;
-        height: 100%;
-        background: azure;
         margin-top:205px;
        
         margin-left: -200px;
-        position: fixed;
+       
+      
+        width: 100%;
     }
+    
+       /* width of #sidebar + extra margin */
+    
+   
     .icon{
         margin-left:150px;
         margin-top:150px;
@@ -187,26 +183,26 @@ a:hover {
     .sidebar {
         width: 100%;
        
-        position: fixed;
+        position: static;
         margin-left: 5px;
       }
  
       #main {
-        position: fixed;
-        top: 45px;
-        right: 25px;
+       
+    top:40px;
+        right: 40px;
        
         left: 275px; /* width of #sidebar + extra margin */
         overflow: auto;
         height: 100%;
-        margin-left: -80px;
-    }
-    #main > div {
+   
         width: 100%;
-        height: 100%;
+       margin-left: -270px;
         background: azure;
         overflow: auto;
+        position: absolute;
     }
+  
     
     
 .active-border{
@@ -219,8 +215,27 @@ a:hover {
     background-image:
         linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
         linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
-        margin-right: 35px;
+        margin-left: 105px;
+
 
 }
+   
+
+.box
+{
+    height: 130px;
+    width: 900px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+ 
+}
+
+.icon{
+  font-size:48px;
+  margin-top:-10px;
+  margin-left: 20px;
+  
+  }
 }
 

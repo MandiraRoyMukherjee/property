@@ -1,0 +1,23 @@
+.txt{
+    margin-left:20px;
+}
+.prev{
+    height: 20px;
+    width: 100px;
+    border: 4px solid black;
+    background-color: brown;
+
+
+}
+.nxt{
+    
+        height: 20px;
+        width: 100px;
+        border: 4px solid black;
+        background-color: brown;
+        margin-left: 800px;
+        margin-top:-50px;
+      
+    
+    
+}

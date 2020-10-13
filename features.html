@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="feastyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="container">
+            <div id="activeBorder" class="active-border">
+                <div id="circle" class="circle">
+                    <span class="prec 270" id="prec">0%</span>
+                </div>
+            </div>
+        </div>
+
+
+        <a href="index.html"><i class="fas fa-address-book">Basic details</i></a>
+        <a href="location.html"><i class="fas fa-directions">Location</i> </a>
+        <a href="property.html"><i class="fas fa-address-book">Property Details </i></a>
+        <a  href="pricing.html"><i class="fas fa-eye">Pricing </i></a>
+        <a class="#features" href="#features"><i class="fas fa-draw-polygon">Features</i></a>
+        <a href="subscription.html"><i class="fas fa-address-book">Subscription</i></a>
+    </div>
+    <h3 style="text-align:center"> Welcome USER. Post property ads for sale / rent in 6 simple steps
+    </h3>
+    
+
+
+    <div id="main">
+       <h3 class="txt"> Add some photos and other features</h3> 
+       <p class="txt">We recommend minimum image size to be<strong>10KB </strong>  and maximum size to be<strong> 5MB.</strong><br>
+         Accepted file formats are png, jpg, jpeg. Detailed Image Guidelines</p>
+         <p class="txt">Drag and Drop Or Click to upload:</p>
+            <form method="post" enctype="multipart/form-data">
+            <input type="file" name="image"/>
+            <input type="submit" name="submit" value="Upload"/>
+            </form>
+          <p class="txt">Amenities:</p>  
+          <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> 
+                Visitor Parking</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Lift(s)</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Maintenance Staff</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Security / Fire Alarm
+            </label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Waste Disposal
+            </label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> ATM
+            </label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Conference room
+
+            </label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Water Storage</label><br><br>
+            <input type="submit" value="Submit">
+          </form>
+          
+          <p class="txt">Some features about your property :</p> 
+          <form action="/action_page.php">
+            <label for="w3review">Description:</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+              At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+              </textarea>
+              <br><br>
+              <input type="submit" value="Submit">
+            
+            <p class="txt">We value your time, tell us your preferences:</p>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">7-9AM
+            </label>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2">9-11AM
+                </label>
+
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">12-2PM
+                    </label>
+
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">6-8PM
+                        </label>
+
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">9-11PM
+                                </label>
+                            </form> 
+           
+          <p class="prev">  &lt; <a href="pricing.html"> Previous </a></p>
+          <p class="nxt"> <a href="subscription.html"> Next > </a> </p>
+
+        <div>
+        </body>
+    </html>

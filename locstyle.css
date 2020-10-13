@@ -1,0 +1,42 @@
+.size{
+    margin-left:20px;
+   
+
+}
+
+.txt{
+    float:left;
+    margin:10px;
+}
+
+.size2{
+    float: left;
+  
+}
+.txt2{
+    margin-top:110px;
+margin-right: 190px;
+}
+
+
+.prev{
+    height: 20px;
+    width: 100px;
+    border: 4px solid black;
+    background-color: brown;
+    margin-top: 50px;
+
+
+}
+.nxt{
+    
+        height: 20px;
+        width: 100px;
+        border: 4px solid black;
+        background-color: brown;
+        margin-left: 800px;
+        margin-top:-50px;
+      
+    
+    
+}
